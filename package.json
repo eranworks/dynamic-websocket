@@ -1,0 +1,28 @@
+{
+  "name": "@erhansiraci/dynamic-websocket",
+  "version": "0.0.1",
+  "description": "node-red-contrib-example-lower-case",
+  "contributors": [
+    {
+      "name": "Erhan Siraci",
+      "email": "esiraci@gmail.com"
+    },
+    {
+      "name": "Alper Yazir",
+      "email": "alperyazir66@gmail.com"
+    }
+  ],
+  "keywords": [
+    "node-red",
+    "websocket"
+  ],
+  "node-red": {
+    "nodes": {
+      "dynamic-websocket": "dynamic-websocket.js"
+    }
+  },
+  "dependencies": {
+    "ws": "^7.4.6"
+  },
+  "license": "ISC"
+}

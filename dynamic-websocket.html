@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    "use strict";
+    
+    RED.nodes.registerType('dynamic-websocket',{
+        category: 'function',
+        color: '#F3B567',
+        palletteLabel: 'dynamic-websocket',
+        defaults: {
+            name: {value:"dynamic-websocket"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bridge-dash.svg",
+        label: function() {
+            return this.name || "socket";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="dynamic-websocket">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="dynamic-websocket">
+    <p>This node is a dynamic websocket node. It can be used to create a websocket connection to a server. The url of the server can be set dynamically by `msg.uri` prop of the input message. The node will try to connect to the server and send the message to the server. The node will also receive the message from the server and send it to the output message.</p>
+</script>
